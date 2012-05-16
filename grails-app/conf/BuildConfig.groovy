@@ -9,7 +9,7 @@ grails.project.dependency.resolution = {
 	// inherit Grails' default dependencies
 	inherits("global") {
 		// uncomment to disable ehcache
-		//excludes "grails-logging","grails-plugin-log4j"
+		// excludes "grails-plugin-log4j", "log4j"
 	}
 	log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
 	repositories {
@@ -27,7 +27,7 @@ grails.project.dependency.resolution = {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
 		// runtime 'mysql:mysql-connector-java:5.1.5'
-		build 'org.glassfish.main.extras:glassfish-embedded-all:3.1.2'
+		// build 'org.glassfish.main.extras:glassfish-embedded-web:3.1.2'
 	}
 
 	plugins {
