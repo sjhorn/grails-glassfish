@@ -13,11 +13,12 @@ grails.project.dependency.resolution = {
 	}
 	log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
 	repositories {
-		grailsCentral()
+		//grailsCentral()
 		// uncomment the below to enable remote dependency resolution
 		// from public Maven repositories
 		//mavenCentral()
 		//mavenLocal()
+		mavenRepo "http://hornmicro.com/maven"
 		//mavenRepo "http://snapshots.repository.codehaus.org"
 		//mavenRepo "http://repository.codehaus.org"
 		//mavenRepo "http://download.java.net/maven/2/"
@@ -25,7 +26,7 @@ grails.project.dependency.resolution = {
 	}
 	dependencies {
 		// specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-
+		build 'org.glassfish.main.extras:glassfish-embedded-web-no-slf4j:3.1.2'
 		// runtime 'mysql:mysql-connector-java:5.1.5'
 		// build 'org.glassfish.main.extras:glassfish-embedded-web:3.1.2'
 	}
